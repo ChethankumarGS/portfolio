@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G S Chethan Kumar - Software Engineer</title>
+<meta name="description" content="Software engineer building full-stack web, Android and cloud apps. Java, Python, TypeScript, MERN, AWS.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#141311;--bg2:#1b1a17;--tx:#efe9dd;--mut:#9a9488;--ln:#2c2a25;--ac:#ff7a5c;--serif:Newsreader,Georgia,"Times New Roman",serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:19px/1.65 var(--serif);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.mono{font-family:var(--mono)}
+.w{max-width:1080px;margin:0 auto;padding:0 24px}
+#rings{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,header,footer{position:relative;z-index:1}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:70px 0 90px}
+.eyebrow{font:13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.eyebrow i{display:inline-block;width:9px;height:17px;background:var(--ac);vertical-align:-3px;margin-left:8px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+h1{font-weight:300;font-size:clamp(44px,8.2vw,104px);line-height:1.02;letter-spacing:-.025em;margin:26px 0 30px;max-width:980px}
+h1 em,h2 em{font-style:italic;color:var(--ac)}
+.sub{max-width:620px;color:#b4ad9f;font-size:clamp(18px,2.2vw,22px)}
+.pill{margin-top:34px;display:inline-flex;gap:12px;align-items:center;border:1px solid var(--ln);background:rgba(27,26,23,.8);border-radius:99px;padding:10px 18px;font:13px/1.4 var(--mono);max-width:100%}
+.pill b{flex:none;width:10px;height:10px;border-radius:50%;background:#4cc36a;box-shadow:0 0 0 4px rgba(76,195,106,.18);animation:pl 2s infinite}
+@keyframes pl{50%{box-shadow:0 0 0 8px rgba(76,195,106,0)}}
+.links{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 26px;font:14px var(--mono)}
+.links a{text-decoration:none;border-bottom:1px solid #6a6558;padding-bottom:2px;transition:.2s}.links a:hover{color:var(--ac);border-color:var(--ac)}
+.scroll{position:absolute;left:24px;bottom:26px;font:12px var(--mono);letter-spacing:.14em;color:var(--mut)}
+.scroll span{display:inline-block;animation:dn 1.6s ease-in-out infinite}@keyframes dn{50%{transform:translateY(5px)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);background:rgba(20,19,17,.7)}
+.stat{padding:30px 20px}.stat b{display:block;font:400 clamp(38px,5vw,60px)/1 var(--mono);letter-spacing:-.04em}.stat small{font:13px var(--mono);color:var(--mut)}
+.proj{display:grid;grid-template-columns:110px 1fr 340px;gap:30px;padding:110px 0;border-bottom:1px solid var(--ln);align-items:start}
+.num{font:300 clamp(64px,9vw,104px)/1 var(--serif);color:#3a372f;transition:color .6s}
+.proj.in .num{color:var(--tx)}
+h2{font-weight:300;font-size:clamp(34px,4.4vw,52px);line-height:1.1;letter-spacing:-.015em;margin-bottom:10px}
+.tag{font-style:italic;color:var(--ac);font-size:22px;margin-bottom:22px}
+.proj p{color:#cfc8ba;margin-bottom:16px;max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}
+.chips span{font:12px var(--mono);border:1px solid var(--ln);padding:4px 10px;color:#b4ad9f;transition:.2s}.chips span:hover{border-color:var(--ac);color:var(--ac)}
+.btns{display:flex;flex-wrap:wrap;gap:16px}
+.btn{display:inline-block;font:14px var(--mono);text-decoration:none;border:1px solid var(--tx);padding:11px 18px;box-shadow:4px 4px 0 var(--tx);transition:.15s;background:var(--bg)}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ac);border-color:var(--ac);color:var(--ac)}
+.fig{position:sticky;top:90px}
+.fig svg{width:100%;height:auto;display:block;stroke:var(--tx);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.fig svg .a{stroke:var(--ac)}
+.fig svg path,.fig svg rect,.fig svg circle,.fig svg line,.fig svg polyline{stroke-dasharray:var(--l,900);stroke-dashoffset:var(--l,900);transition:stroke-dashoffset 1.8s ease}
+.proj.in .fig svg path,.proj.in .fig svg rect,.proj.in .fig svg circle,.proj.in .fig svg line,.proj.in .fig svg polyline{stroke-dashoffset:0}
+.fig figcaption{font:12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-align:center;margin-top:16px}
+.win{margin:6px 0 24px;max-width:560px;border:1px solid var(--tx);background:var(--bg2);box-shadow:5px 5px 0 var(--tx);font:13px/1.7 var(--mono)}
+.win .tb{display:flex;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--tx)}
+.win .tb s{display:flex;gap:6px;text-decoration:none}.win .tb s i{width:11px;height:11px;border:1px solid var(--tx)}
+.win pre{padding:14px 16px;white-space:pre-wrap;color:#cfc8ba;font:inherit}
+.r{color:#ff6b6b}.y{color:#f0c14b}.g{color:#4cc36a}.o{color:var(--ac)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.rv.in,.st .rv{opacity:1;transform:none}
+.os a{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-top:1px solid var(--ln);text-decoration:none;font-size:20px;transition:.25s}
+.os a:last-child{border-bottom:1px solid var(--ln)}.os a:hover{padding-left:14px;color:var(--ac)}.os span{font:13px var(--mono);color:var(--mut);white-space:nowrap;padding-top:6px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:36px}
+.tl{border-left:1px solid var(--ln);padding-left:22px;display:grid;gap:26px}.tl h3{font:400 21px var(--serif)}.tl small{font:12px var(--mono);color:var(--mut)}.tl p{font-size:17px;color:#b4ad9f}
+.sk h3{font:12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin:0 0 10px}.sk{margin-bottom:22px}.sk p{font:14px/1.9 var(--mono);color:#cfc8ba}
+.contact{padding:120px 0 90px;text-align:left}
+.contact h2{font-size:clamp(44px,8vw,96px);line-height:1.02}
+footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);color:var(--mut)}
+#prog{position:fixed;right:28px;bottom:22px;z-index:5;display:flex;align-items:flex-end;gap:14px;font-family:var(--mono);mix-blend-mode:normal}
+#prog .bars{display:flex;gap:6px;padding-bottom:12px}#prog .bars i{width:26px;height:2px;background:#3a372f;transition:.4s}#prog .bars i.on{background:var(--tx)}
+#prog b{font:400 40px/1 var(--mono)}#prog small{font-size:12px;color:var(--mut);padding-bottom:4px}
+@media(max-width:900px){.proj{grid-template-columns:1fr;gap:18px;padding:70px 0}.fig{position:static;max-width:300px}.stats{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}#prog .bars{display:none}.num{font-size:60px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.fig svg *{stroke-dashoffset:0!important}}
+.st *{transition:none!important}.st .fig svg *{stroke-dashoffset:0!important}
+.mf{padding:110px 0 70px;border-bottom:1px solid var(--ln)}
+.mf .eyebrow{margin-bottom:28px}
+.mf h2.big{font-size:clamp(40px,7vw,88px);line-height:1.04;margin-bottom:44px;max-width:900px}
+.mf .ln{display:block;opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
+.mf.in .ln,.st .mf .ln{opacity:1;transform:none}
+.mf.in .ln:nth-child(2){transition-delay:.18s}.mf.in .ln:nth-child(3){transition-delay:.36s}
+.mf .cols2{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:20px}
+.mf p{color:#cfc8ba;max-width:520px;margin-bottom:18px}
+.rc{border-top:1px solid var(--ln)}
+.rc div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--ln);font-size:17px;color:#cfc8ba}
+.rc b{font:500 12px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+.rc div{transition:.25s}.rc div:hover{padding-left:12px;color:var(--tx)}
+@media(max-width:900px){.mf{padding:80px 0 20px}.mf .cols2{grid-template-columns:1fr;gap:20px}.rc div{grid-template-columns:1fr;gap:2px}}
+</style></head><body>
+<canvas id="rings"></canvas>
+<header class="hero"><div class="w">
+<div class="eyebrow">G S Chethan Kumar &mdash; Bengaluru<i></i></div>
+<h1>I build apps people use, <em>and the backend behind them.</em></h1>
+<p class="sub">Software engineer. 2026 graduate in Information Science &amp; Engineering from DSCE. I like scalable systems and databases, and I ship projects live: a scholarship app for students, a schema-diff tool, a campus platform, a stay-booking app.</p>
+<div class="pill"><b></b>Hungry, not comfortable. Open to full-time roles in backend, full-stack and cloud. Bengaluru or remote.</div>
+<div class="links"><a href="mailto:chethankumar0544@gmail.com">chethankumar0544@gmail.com</a><a href="https://www.linkedin.com/in/g-s-chethan-kumar-362686276" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/ChethankumarGS" target="_blank" rel="noopener">GitHub</a></div>
+</div><div class="scroll">SCROLL <span>&darr;</span></div></header>
+
+<main>
+<div class="stats w" style="padding:0">
+<div class="stat"><b data-n="20" data-s="+">20+</b><small>scholarship schemes in Sarathi</small></div>
+<div class="stat"><b data-n="27">27</b><small>tests behind SchemaDrift</small></div>
+<div class="stat"><b data-n="3">3</b><small>open-source PRs and fixes</small></div>
+<div class="stat"><b data-n="6" data-s=" mo">6 mo</b><small>software engineering internship</small></div></div>
+
+<div class="w">
+<section class="mf rv" id="about"><div class="eyebrow">Manifesto</div>
+<h2 class="big"><span class="ln">No comfortable seat.</span><span class="ln">I'd rather <em>build from zero.</em></span></h2>
+<div class="rc">
+<div><b>Mysa</b><span>Startup. Built an internal client-onboarding tool in Retool.</span></div>
+<div><b>Sarathi</b><span>Scholarship app, 20+ schemes, works offline.</span></div>
+<div><b>Open source</b><span>3 fixes shipped to Hono and AKHQ.</span></div></div></section>
+
+<section class="proj" data-i="1"><div class="num">01</div>
+<div class="body rv"><h2>Sarathi</h2><div class="tag">A scholarship finder that works offline.</div>
+<p>Sarathi is a scholarship list for Karnataka students. It puts 20+ schemes in one list: amount, last date, eligibility, and the documents to carry.</p>
+<p>Filters narrow the list, each scheme has a document checklist, and local reminders fire 7, 3 and 1 days before the deadline. Built for a quick glance, not a long read.</p>
+<div class="chips"><span>React Native</span><span>Expo</span><span>TypeScript</span></div>
+<div class="btns"><a class="btn" href="https://github.com/ChethankumarGS/sarathi" target="_blank" rel="noopener">View code &rarr;</a></div></div>
+<figure class="fig rv"><svg viewBox="0 0 300 330"><rect x="85" y="20" width="130" height="260" rx="20" style="--l:760"/><line x1="130" y1="36" x2="170" y2="36" style="--l:40"/><rect x="100" y="60" width="100" height="42" rx="6" style="--l:300"/><rect x="100" y="112" width="100" height="42" rx="6" style="--l:300"/><rect class="a" x="100" y="164" width="100" height="42" rx="6" style="--l:300"/><circle class="a" cx="150" cy="240" r="16" style="--l:110"/><polyline class="a" points="142,240 148,246 160,234" style="--l:40"/><path d="M60 300 C 100 285, 130 315, 170 300 S 240 290, 260 302" style="--l:260"/></svg><figcaption>Fig. 1 &mdash; deadlines, offline</figcaption></figure></section>
+
+<section class="proj" data-i="2"><div class="num">02</div>
+<div class="body rv"><h2>SchemaDrift</h2><div class="tag">Catch the risky migration before it ships.</div>
+<p>Paste two versions of a database schema, SQL or JSON, and SchemaDrift lists every change and marks it breaking, review or safe. Dropped columns, NOT NULL traps, narrowed types, new unique constraints.</p>
+<div class="win"><div class="tb"><span>schemadrift - sample</span><s><i></i><i></i><i></i></s></div><pre><span class="r">BREAKING</span>  users.phone      dropped
+<span class="r">BREAKING</span>  orders.note      NOT NULL added
+<span class="y">REVIEW  </span>  users.name       VARCHAR(100)&rarr;(50)
+<span class="g">SAFE    </span>  orders.coupon    column added</pre></div>
+<p>There is a small JSON API so it can run as a CI check, and the diff logic is covered by 27 tests.</p>
+<div class="chips"><span>Python</span><span>Flask</span><span>Vercel</span></div>
+<div class="btns"><a class="btn" href="https://schema-drift-nine.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/SchemaDrift" target="_blank" rel="noopener">Code &rarr;</a></div></div>
+<figure class="fig rv"><svg viewBox="0 0 300 330"><rect x="30" y="40" width="100" height="180" rx="6" style="--l:560"/><rect x="170" y="40" width="100" height="180" rx="6" style="--l:560"/><line x1="45" y1="75" x2="115" y2="75" style="--l:70"/><line x1="45" y1="105" x2="115" y2="105" style="--l:70"/><line class="a" x1="45" y1="135" x2="115" y2="135" style="--l:70"/><line x1="185" y1="75" x2="255" y2="75" style="--l:70"/><line x1="185" y1="105" x2="235" y2="105" style="--l:70"/><line class="a" x1="185" y1="165" x2="255" y2="165" style="--l:70"/><path class="a" d="M135 135 L165 165" style="--l:50"/><path d="M60 270 h180" style="--l:180"/><path class="a" d="M60 295 h90" style="--l:90"/></svg><figcaption>Fig. 2 &mdash; every change, classified</figcaption></figure></section>
+
+<section class="proj" data-i="3"><div class="num">03</div>
+<div class="body rv"><h2>Campus Connect</h2><div class="tag">One place for courses and materials.</div>
+<p>A department platform with three roles: student, lecturer and admin. Lecturers create courses and upload learning materials. Students enroll and open what they need.</p>
+<p>JWT auth with bcrypt, file uploads, server-rendered pages with Next.js, and an Express and MongoDB backend.</p>
+<div class="chips"><span>Next.js</span><span>TypeScript</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+<div class="btns"><a class="btn" href="https://department-ms.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/CAMPUS-CONNECT" target="_blank" rel="noopener">Code &rarr;</a></div></div>
+<figure class="fig rv"><svg viewBox="0 0 300 330"><path d="M40 120 L150 60 L260 120 L150 180 Z" style="--l:560"/><path d="M80 142 V200 C80 225 220 225 220 200 V142" style="--l:340"/><line class="a" x1="260" y1="120" x2="260" y2="195" style="--l:80"/><circle class="a" cx="260" cy="205" r="9" style="--l:60"/><rect x="70" y="255" width="160" height="26" rx="4" style="--l:400"/></svg><figcaption>Fig. 3 &mdash; students, lecturers, admins</figcaption></figure></section>
+
+<section class="proj" data-i="4"><div class="num">04</div>
+<div class="body rv"><h2>Wanderlust</h2><div class="tag">An Airbnb-style stay platform.</div>
+<p>Browse places to stay, post your own, and leave reviews. Each listing has uploaded photos, a marker on the map and a star rating.</p>
+<p>Node and Express on the server, EJS views, MongoDB for data and Cloudinary for images. Hosted on Render's free tier, so the first load can take a moment.</p>
+<div class="chips"><span>Node.js</span><span>Express</span><span>EJS</span><span>MongoDB</span><span>Cloudinary</span></div>
+<div class="btns"><a class="btn" href="https://wanderlust-s9l5.onrender.com/listings" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/AIRBNB" target="_blank" rel="noopener">Code &rarr;</a></div></div>
+<figure class="fig rv"><svg viewBox="0 0 300 330"><path d="M150 40 C105 40 80 75 80 110 C80 155 150 230 150 230 C150 230 220 155 220 110 C220 75 195 40 150 40 Z" style="--l:560"/><circle class="a" cx="150" cy="110" r="26" style="--l:170"/><path d="M45 270 Q100 245 150 270 T255 270" style="--l:260"/><path d="M60 300 Q110 280 160 300 T250 300" style="--l:260"/></svg><figcaption>Fig. 4 &mdash; find a place to stay</figcaption></figure></section>
+
+<section class="proj" data-i="5"><div class="num">05</div>
+<div class="body rv" style="grid-column:2/4"><h2>Open source, <em>fixed in public.</em></h2><div class="tag">Real bugs in repos other people use. No one asked me to.</div>
+<div class="os">
+<a href="https://github.com/honojs/middleware/pull/2175" target="_blank" rel="noopener">honojs/middleware: session invalidation fix in @hono/oidc-auth<span>PR #2175</span></a>
+<a href="https://github.com/honojs/hono/issues/5546" target="_blank" rel="noopener">honojs/hono: mount() path bug with parameterized routes<span>ISSUE #5546</span></a>
+<a href="https://github.com/tchiotludo/akhq/pull/3308" target="_blank" rel="noopener">tchiotludo/akhq: showBytes fix with unit tests<span>PR #3308</span></a></div></div></section>
+
+<section class="proj" data-i="6"><div class="num">06</div>
+<div class="body rv" style="grid-column:2/4"><h2>How I work, <em>and where.</em></h2>
+<div class="cols"><div class="tl">
+<div><h3>Software Engineering Intern, Mysa</h3><small>FINTECH STARTUP / ABOUT 6 MONTHS</small><p>App development and backend work. Built an internal client-onboarding tool in Retool on top of the existing microservices.</p></div>
+<div><h3>Web Development Intern, TechSonIX Solutions</h3><small>2025</small><p>Web development internship.</p></div>
+<div><h3>B.E. Information Science &amp; Engineering</h3><small>DAYANANDA SAGAR COLLEGE OF ENGINEERING / 2026</small></div></div>
+<div><div class="sk"><h3>Languages</h3><p>Java &middot; Python &middot; JavaScript &middot; TypeScript &middot; C++ &middot; C</p></div>
+<div class="sk"><h3>Web &amp; mobile</h3><p>React &middot; Next.js &middot; Node.js &middot; Express &middot; React Native &middot; HTML/CSS</p></div>
+<div class="sk"><h3>Data &amp; cloud</h3><p>MongoDB &middot; PostgreSQL &middot; MySQL &middot; AWS &middot; Docker &middot; Git</p></div>
+<div class="sk"><h3>CS core</h3><p>OOP &middot; DBMS &middot; Operating systems &middot; Networking</p></div></div></div></div></section>
+</div>
+
+<section class="contact w rv"><div class="eyebrow">Contact</div><h2 style="margin-top:20px">Building something? <em>Let's talk.</em></h2>
+<div class="btns" style="margin-top:30px"><a class="btn" href="mailto:chethankumar0544@gmail.com">Email me &rarr;</a><a class="btn" href="https://www.linkedin.com/in/g-s-chethan-kumar-362686276" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/ChethankumarGS" target="_blank" rel="noopener">GitHub</a></div></section>
+</main>
+<footer><div class="w">&copy; 2026 G S Chethan Kumar</div></footer>
+<div id="prog"><div class="bars"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><b id="pn">01</b><small>/ 06</small></div>
+<script>
+const st=location.hash==='#static';if(st){document.documentElement.classList.add('st');document.querySelector('.hero').style.minHeight='800px'}
+// rings
+const cv=document.getElementById('rings'),cx=cv.getContext('2d');let W,H,mx=.5,my=.5,sy=0,t=0;
+function rs(){const d=devicePixelRatio||1;W=cv.width=innerWidth*d;H=cv.height=innerHeight*d;cx.setTransform(d,0,0,d,0,0)}rs();addEventListener('resize',rs);
+addEventListener('mousemove',e=>{mx=e.clientX/innerWidth;my=e.clientY/innerHeight});addEventListener('scroll',()=>sy=scrollY);
+function draw(){t+=.004;const w=innerWidth,h=innerHeight;cx.clearRect(0,0,w,h);const ox=w*.82+(mx-.5)*-40,oy=h*.38-sy*.25+(my-.5)*-30;
+for(let i=1;i<=7;i++){const r=i*92+Math.sin(t*2+i)*8;cx.beginPath();cx.arc(ox,oy,r,0,6.283);cx.strokeStyle=`rgba(239,233,221,${.075-i*.007})`;cx.lineWidth=1.2;cx.stroke();
+const a=t*(i%2?1:-1)+i;cx.beginPath();cx.arc(ox+Math.cos(a)*r,oy+Math.sin(a)*r,2.4,0,6.283);cx.fillStyle=i%3==0?'#ff7a5c':'rgba(239,233,221,.5)';cx.fill()}
+requestAnimationFrame(draw)}draw();
+// reveal, progress, counters
+const secs=[...document.querySelectorAll('.proj')],bars=document.querySelectorAll('#prog .bars i'),pn=document.getElementById('pn');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.2});
+document.querySelectorAll('.rv,.proj,.mf').forEach(el=>io.observe(el));
+if(st)document.querySelectorAll('.proj,.mf').forEach(e=>e.classList.add('in'));
+function prog(){let k=0;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.5)k=i});bars.forEach((b,i)=>b.classList.toggle('on',i===k));pn.textContent='0'+(k+1)}
+addEventListener('scroll',prog);prog();
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting||st)return;so.unobserve(e.target);document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n,s=el.dataset.s||'';let c=0;const iv=setInterval(()=>{c+=Math.max(1,Math.ceil(n/22));if(c>=n){c=n;clearInterval(iv)}el.textContent=c+s},40)})}),{threshold:.5});so.observe(document.querySelector('.stats'));
+</script></body></html>
