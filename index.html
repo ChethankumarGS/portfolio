@@ -93,7 +93,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <header class="hero"><div class="w">
 <div class="eyebrow">G S Chethan Kumar &mdash; Bengaluru<i></i></div>
 <h1>I build apps people use, <em>and the backend behind them.</em></h1>
-<p class="sub">Software engineer. 2026 graduate in Information Science &amp; Engineering from DSCE. I like scalable systems and databases, and I ship projects live: a scholarship app for students, a schema-diff tool, a campus platform, a stay-booking app.</p>
+<p class="sub">Software engineer. 2026 graduate in Information Science &amp; Engineering from DSCE. I like scalable systems and databases, and I ship projects live: a book-swap app, a scholarship app for students, a schema-diff tool, a campus platform, a stay-booking app.</p>
 <div class="pill"><b></b>Hungry, not comfortable. Open to full-time roles in backend, full-stack and cloud. Bengaluru or remote.</div>
 <div class="links"><a href="mailto:chethankumar0544@gmail.com">chethankumar0544@gmail.com</a><a href="https://www.linkedin.com/in/g-s-chethan-kumar-362686276" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/ChethankumarGS" target="_blank" rel="noopener">GitHub</a></div>
 </div><div class="scroll">SCROLL <span>&darr;</span></div></header>
@@ -113,7 +113,15 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <div><b>Sarathi</b><span>Scholarship app, 20+ schemes, works offline.</span></div>
 <div><b>Open source</b><span>4 merged PRs, in Keycloak and Hono. 3 more under review in Keycloak, Hono and AKHQ.</span></div></div></section>
 
-<section class="proj" data-i="1"><div class="num">01</div>
+<section class="proj" data-i="1" id="swap-your-book"><div class="num">01</div>
+<div class="body rv"><h2>Swap Your Book</h2><div class="tag">Your next chapter starts with a swap.</div>
+<p>A book-for-book exchange app. List a book with an optional photo, search by title or area, and send another reader a swap request.</p>
+<p>Readers can accept requests and chat in the app. JWT authentication and bcrypt protect sign-in; MongoDB stores books, requests and messages. Photo uploads are resized and re-encoded on the server, and an in-app notification bell checks for updates.</p>
+<div class="chips"><span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Vercel</span></div>
+<div class="btns"><a class="btn" href="https://find-ur-next-book.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a></div></div>
+<figure class="fig rv" aria-hidden="true"><svg viewBox="0 0 300 330"><path d="M30 75 Q90 50 145 80 V245 Q90 215 30 240 Z"/><path class="a" d="M155 80 Q210 50 270 75 V240 Q210 215 155 245 Z"/><path d="M55 105 L115 105 M55 130 L115 130 M185 105 L245 105 M185 130 L245 130"/><path class="a" d="M85 285 H215 M200 272 L215 285 L200 298"/></svg><figcaption>Book-for-book exchange</figcaption></figure></section>
+
+<section class="proj" data-i="2"><div class="num">02</div>
 <div class="body rv"><h2>Sarathi</h2><div class="tag">A scholarship finder that works offline.</div>
 <p>Sarathi is a scholarship list for Karnataka students. It puts 20+ schemes in one list: amount, last date, eligibility, and the documents to carry.</p>
 <p>Filters narrow the list, each scheme has a document checklist, and local reminders fire 7, 3 and 1 days before the deadline. Built for a quick glance, not a long read.</p>
@@ -121,7 +129,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <div class="btns"><a class="btn" href="https://sarathi-wine.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/sarathi" target="_blank" rel="noopener">View code &rarr;</a></div></div>
 <figure class="fig rv" aria-hidden="true"><svg viewBox="0 0 300 330"><rect x="85" y="20" width="130" height="260" rx="20" style="--l:760"/><line x1="130" y1="36" x2="170" y2="36" style="--l:40"/><rect x="100" y="60" width="100" height="42" rx="6" style="--l:300"/><rect x="100" y="112" width="100" height="42" rx="6" style="--l:300"/><rect class="a" x="100" y="164" width="100" height="42" rx="6" style="--l:300"/><circle class="a" cx="150" cy="240" r="16" style="--l:110"/><polyline class="a" points="142,240 148,246 160,234" style="--l:40"/><path d="M60 300 C 100 285, 130 315, 170 300 S 240 290, 260 302" style="--l:260"/></svg><figcaption>Fig. 1 &mdash; deadlines, offline</figcaption></figure></section>
 
-<section class="proj" data-i="2"><div class="num">02</div>
+<section class="proj" data-i="3"><div class="num">03</div>
 <div class="body rv"><h2>SchemaDrift</h2><div class="tag">Catch the risky migration before it ships.</div>
 <p>Paste two versions of a database schema, SQL or JSON, and SchemaDrift lists every change and marks it breaking, review or safe. Dropped columns, NOT NULL traps, narrowed types, new unique constraints.</p>
 <div class="win"><div class="tb"><span>schemadrift - sample</span><s><i></i><i></i><i></i></s></div><pre><span class="r">BREAKING</span>  users.phone      dropped
@@ -133,7 +141,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <div class="btns"><a class="btn" href="https://schema-drift-nine.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/SchemaDrift" target="_blank" rel="noopener">Code &rarr;</a></div></div>
 <figure class="fig rv" aria-hidden="true"><svg viewBox="0 0 300 330"><rect x="30" y="40" width="100" height="180" rx="6" style="--l:560"/><rect x="170" y="40" width="100" height="180" rx="6" style="--l:560"/><line x1="45" y1="75" x2="115" y2="75" style="--l:70"/><line x1="45" y1="105" x2="115" y2="105" style="--l:70"/><line class="a" x1="45" y1="135" x2="115" y2="135" style="--l:70"/><line x1="185" y1="75" x2="255" y2="75" style="--l:70"/><line x1="185" y1="105" x2="235" y2="105" style="--l:70"/><line class="a" x1="185" y1="165" x2="255" y2="165" style="--l:70"/><path class="a" d="M135 135 L165 165" style="--l:50"/><path d="M60 270 h180" style="--l:180"/><path class="a" d="M60 295 h90" style="--l:90"/></svg><figcaption>Fig. 2 &mdash; every change, classified</figcaption></figure></section>
 
-<section class="proj" data-i="3"><div class="num">03</div>
+<section class="proj" data-i="4"><div class="num">04</div>
 <div class="body rv"><h2>Campus Connect</h2><div class="tag">One place for courses and materials.</div>
 <p>A department platform with three roles: student, lecturer and admin. Lecturers create courses and upload learning materials. Students enroll and open what they need.</p>
 <p>JWT auth with bcrypt, file uploads, server-rendered pages with Next.js, and an Express and MongoDB backend. I also added an AI course assistant: students ask questions about the uploaded PDFs and DOCX files and get answers with source citations (embeddings and retrieval with Gemini), and each material can generate a summary and a short quiz.</p>
@@ -141,7 +149,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <div class="btns"><a class="btn" href="https://campus-connect-psi-eight.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/CAMPUS-CONNECT" target="_blank" rel="noopener">Code &rarr;</a></div></div>
 <figure class="fig rv" aria-hidden="true"><svg viewBox="0 0 300 330"><path d="M40 120 L150 60 L260 120 L150 180 Z" style="--l:560"/><path d="M80 142 V200 C80 225 220 225 220 200 V142" style="--l:340"/><line class="a" x1="260" y1="120" x2="260" y2="195" style="--l:80"/><circle class="a" cx="260" cy="205" r="9" style="--l:60"/><rect x="70" y="255" width="160" height="26" rx="4" style="--l:400"/></svg><figcaption>Fig. 3 &mdash; students, lecturers, admins</figcaption></figure></section>
 
-<section class="proj" data-i="4"><div class="num">04</div>
+<section class="proj" data-i="5"><div class="num">05</div>
 <div class="body rv"><h2>Wanderlust</h2><div class="tag">An Airbnb-style stay platform.</div>
 <p>Browse places to stay, post your own, and leave reviews. Each listing has uploaded photos, a marker on the map and a star rating.</p>
 <p>Node and Express on the server, EJS views, MongoDB for data and Cloudinary for images.</p>
@@ -149,7 +157,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <div class="btns"><a class="btn" href="https://wanderlust-tan-ten.vercel.app/listings" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://wanderlust-tan-ten.vercel.app/ai/stay-finder" target="_blank" rel="noopener">AI stay finder &rarr;</a><a class="btn" href="https://github.com/ChethankumarGS/AIRBNB" target="_blank" rel="noopener">Code &rarr;</a></div></div>
 <figure class="fig rv" aria-hidden="true"><svg viewBox="0 0 300 330"><path d="M150 40 C105 40 80 75 80 110 C80 155 150 230 150 230 C150 230 220 155 220 110 C220 75 195 40 150 40 Z" style="--l:560"/><circle class="a" cx="150" cy="110" r="26" style="--l:170"/><path d="M45 270 Q100 245 150 270 T255 270" style="--l:260"/><path d="M60 300 Q110 280 160 300 T250 300" style="--l:260"/></svg><figcaption>Fig. 4 &mdash; find a place to stay</figcaption></figure></section>
 
-<section class="proj" data-i="5"><div class="num">05</div>
+<section class="proj" data-i="6"><div class="num">06</div>
 <div class="body rv" style="grid-column:2/4"><h2>Open source, <em>fixed in public.</em></h2><div class="tag">Real bugs in repos other people use. Four merged so far, three more under review.</div>
 <div class="os">
 <a href="https://github.com/keycloak/keycloak/pull/53955" target="_blank" rel="noopener">keycloak/keycloak: set appVersion in the operator Helm chart, merged<span>PR #53955 &middot; MERGED</span></a>
@@ -161,7 +169,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <a href="https://github.com/tchiotludo/akhq/pull/3308" target="_blank" rel="noopener">tchiotludo/akhq: showBytes fix with unit tests<span>PR #3308 &middot; OPEN</span></a>
 <a href="https://github.com/honojs/hono/issues/5546" target="_blank" rel="noopener">honojs/hono: mount() path bug with parameterized routes<span>ISSUE #5546</span></a></div></div></section>
 
-<section class="proj" data-i="6"><div class="num">06</div>
+<section class="proj" data-i="7"><div class="num">07</div>
 <div class="body rv" style="grid-column:2/4"><h2>How I work, <em>and where.</em></h2>
 <div class="cols"><div class="tl">
 <div><h3>Software Engineering Intern, Mysa</h3><small>FINTECH STARTUP / MAR &ndash; SEP 2026</small><p>App development and backend work. Built an internal client-onboarding tool in Retool on top of the existing microservices.</p></div>
@@ -178,7 +186,7 @@ footer{border-top:1px solid var(--ln);padding:26px 0 80px;font:12px var(--mono);
 <div class="btns" style="margin-top:30px"><a class="btn" href="mailto:chethankumar0544@gmail.com">Email me &rarr;</a><a class="btn" href="https://www.linkedin.com/in/g-s-chethan-kumar-362686276" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/ChethankumarGS" target="_blank" rel="noopener">GitHub</a></div></section>
 </main>
 <footer><div class="w">&copy; 2026 G S Chethan Kumar</div></footer>
-<div id="prog"><div class="bars"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><b id="pn">01</b><small>/ 06</small></div>
+<div id="prog"><div class="bars"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div><b id="pn">01</b><small>/ 07</small></div>
 <script>
 const st=location.hash==='#static';if(st){document.documentElement.classList.add('st');document.querySelector('.hero').style.minHeight='800px'}
 // rings
